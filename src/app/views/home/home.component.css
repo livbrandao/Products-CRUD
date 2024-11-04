@@ -1,0 +1,14 @@
+.card {
+  padding: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
