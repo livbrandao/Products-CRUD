@@ -15,6 +15,10 @@ export class ProductService {
     return this._http.post<Product>(this.baseUrl, product);
   }
 
+  read(): Observable<Product[]> {
+    return this._http.get<Product[]>(this.baseUrl);
+  }
+
   getCompanyById(id: string): Observable<Product> {
     return this._http.get<Product>(`${this.baseUrl}/${id}`);
   }
