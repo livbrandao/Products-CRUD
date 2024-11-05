@@ -23,6 +23,9 @@ import { CardComponent } from './components/card/card.component';
 import { DetailCardComponent } from './components/detail-card/detail-card.component';
 import { ModalSucessComponent } from './components/modal-sucess/modal-sucess.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -50,6 +53,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatButtonModule,
     HttpClientModule,
     MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

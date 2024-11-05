@@ -8,12 +8,13 @@
 button {
   display: flex;
   justify-content: end;
-  width: 100%;
+  position: absolute;
+  right: 0;
 }
 
 .modal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20rem 50rem;
+  padding: 6rem;
 }
