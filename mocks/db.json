@@ -2,8 +2,13 @@
   "products": [
     {
       "id": 1,
-      "nome": "Empresa Exemplo",
-      "price": "3"
+      "name": "Notebook Mac",
+      "price": 3000
+    },
+    {
+      "id": 2,
+      "name": "Monitor Acer",
+      "price": 3000
     }
   ]
 }
