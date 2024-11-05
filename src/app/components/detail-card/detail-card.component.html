@@ -1,0 +1,21 @@
+<mat-card class="detail-card">
+  <div>
+    <mat-card-title class="title"> Detalhes do pedido </mat-card-title>
+
+    <button mat-raised-button [routerLink]="['/edit', id]">
+      <i class="material-icons">person_edit</i>
+      Editar
+    </button>
+  </div>
+  <div class="flex items-center">
+    <div mat-card-avatar class="avatar">
+      <i class="material-icons">person</i>
+    </div>
+    <mat-card-title class="">{{ name }}</mat-card-title>
+  </div>
+  <div class="">
+    <mat-card-subtitle class=""
+      >Preço: <span class="">{{ price }}</span></mat-card-subtitle
+    >
+  </div>
+</mat-card>

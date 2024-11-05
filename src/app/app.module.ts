@@ -18,6 +18,11 @@ import { ProductComponent } from './views/product/product.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
+import { DetailCardComponent } from './components/detail-card/detail-card.component';
+import { ModalSucessComponent } from './components/modal-sucess/modal-sucess.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -30,6 +35,9 @@ import { ProductCreateComponent } from './components/products/product-create/pro
     RedDirective,
     ForDirective,
     ProductCreateComponent,
+    CardComponent,
+    DetailCardComponent,
+    ModalSucessComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +48,8 @@ import { ProductCreateComponent } from './components/products/product-create/pro
     MatListModule,
     MatCardModule,
     MatButtonModule,
+    HttpClientModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
