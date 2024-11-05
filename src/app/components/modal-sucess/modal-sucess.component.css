@@ -1,0 +1,19 @@
+.custom-size {
+  width: 110px;
+  height: 110px;
+  font-size: 113px;
+  color: #247c6c;
+}
+
+button {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rem 50rem;
+}
