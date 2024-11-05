@@ -4,6 +4,15 @@
       <img class="logo" src="assets/img/logo-crud.png" alt="logo"
     /></a>
   </span>
+
+  <button
+    mat-raised-button
+    (click)="navigateToProductsCreate()"
+    color="primary"
+    *ngIf="exibirBotao"
+  >
+    Novo produto
+  </button>
   <!-- <span>
     <a href="">
       <i class="material-icons">dashboard</i>

@@ -7,11 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./product.component.css'],
 })
 export class ProductComponent implements OnInit {
-  constructor(private route: Router) {}
-
   ngOnInit(): void {}
-
-  navigateToProductsCreate(): void {
-    this.route.navigate(['/products/create']);
-  }
 }
