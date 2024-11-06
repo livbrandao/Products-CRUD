@@ -1,14 +1,14 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Notebook Mac",
-      "price": 3000
+      "price": "4000"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Monitor Acer",
-      "price": 3000
+      "price": "3500"
     }
   ]
 }

@@ -1,11 +1,11 @@
-import { Component } from "@angular/core";
-import { MatDialogRef } from "@angular/material/dialog";
-import { Router } from "@angular/router";
+import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-modal-sucess",
-  templateUrl: "./modal-sucess.component.html",
-  styleUrls: ["./modal-sucess.component.css"],
+  selector: 'app-modal-sucess',
+  templateUrl: './modal-sucess.component.html',
+  styleUrls: ['./modal-sucess.component.css'],
 })
 export class ModalSucessComponent {
   constructor(
@@ -15,6 +15,6 @@ export class ModalSucessComponent {
 
   closeAndRedirect() {
     this.dialogRef.close();
-    this.router.navigate(["/"]);
+    this.router.navigate(['/products']);
   }
 }

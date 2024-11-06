@@ -13,9 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.events.subscribe((event) => {
-      this.exibirBotao =
-        !this.route.url.includes('/products/create') &&
-        this.route.url.includes('/products');
+      this.exibirBotao = this.route.url.includes('/products');
     });
   }
 

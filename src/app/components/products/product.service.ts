@@ -19,12 +19,12 @@ export class ProductService {
     return this._http.get<Product[]>(this.baseUrl);
   }
 
-  getCompanyById(id: string): Observable<Product> {
+  readById(id: string): Observable<Product> {
     return this._http.get<Product>(`${this.baseUrl}/${id}`);
   }
 
-  updateCompany(company: Product): Observable<Product> {
-    return this._http.put<Product>(`${this.baseUrl}/${company.id}`, company);
+  updateProduct(product: Product): Observable<Product> {
+    return this._http.put<Product>(`${this.baseUrl}/${product.id}`, product);
   }
 
   getProductsData(): Observable<Product[]> {
