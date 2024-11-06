@@ -59,11 +59,12 @@ export class ModalDeleteComponent implements OnInit {
     this.route.navigate(['/products']);
   }
 
-  showToast(message: string): void {
-    this.snackBar.open(message, 'X', {
+  showToast(msg: string): void {
+    this.snackBar.open(msg, 'X', {
       duration: 3000,
       horizontalPosition: 'right',
       verticalPosition: 'top',
+      panelClass: ['msg-sucess'],
     });
   }
 }
