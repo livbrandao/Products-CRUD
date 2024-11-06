@@ -10,14 +10,18 @@
     </button>
   </mat-dialog-actions>
   <div class="modal">
-    <mat-dialog-content
+    <mat-dialog-content class="title"
       >Tem certeza que deseja excluir o produto?</mat-dialog-content
     >
 
     <div *ngIf="products">
       <ul>
-        <li>Nome: {{ products?.name }}</li>
-        <li>Preço: {{ products?.price | currency : "BRL" }}</li>
+        <li>
+          Nome: <span>{{ products?.name }} </span>
+        </li>
+        <li>
+          Preço: <span>{{ products?.price | currency : "BRL" }} </span>
+        </li>
       </ul>
     </div>
 
