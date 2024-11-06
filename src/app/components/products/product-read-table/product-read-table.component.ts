@@ -17,7 +17,7 @@ export class ProductReadTableComponent implements AfterViewInit, OnInit {
   @ViewChild(MatTable) table!: MatTable<Product>;
   dataSource: ProductReadTableDataSource;
 
-  displayedColumns = ['id', 'name', 'price'];
+  displayedColumns = ['id', 'name', 'price', 'action'];
   products: Product[] = [];
 
   constructor(private productService: ProductService) {
