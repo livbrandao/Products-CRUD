@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 import { ProductComponent } from './views/product/product.component';
 import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
+import { ModalDeleteComponent } from './components/modal-delete/modal-delete.component';
 
 const routes: Routes = [
   {

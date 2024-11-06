@@ -5,6 +5,8 @@ import { MatTable } from '@angular/material/table';
 import { ProductReadTableDataSource } from './product-read-table-datasource';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
+import { ModalDeleteComponent } from '../../modal-delete/modal-delete.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-product-read-table',
@@ -20,7 +22,10 @@ export class ProductReadTableComponent implements AfterViewInit, OnInit {
   displayedColumns = ['id', 'name', 'price', 'action'];
   products: Product[] = [];
 
-  constructor(private productService: ProductService) {
+  constructor(
+    private productService: ProductService,
+    private _dialog: MatDialog
+  ) {
     // Passe o ProductService para o dataSource
     this.dataSource = new ProductReadTableDataSource(this.productService);
   }
@@ -35,5 +40,10 @@ export class ProductReadTableComponent implements AfterViewInit, OnInit {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
+  }
+
+  delete(product: Product): void {
+    this.productService.setProduct(product);
+    this._dialog.open(ModalDeleteComponent);
   }
 }

@@ -1,0 +1,31 @@
+<section>
+  <mat-dialog-actions>
+    <button
+      mat-button
+      mat-dialog-close
+      class="close"
+      (click)="closeAndRedirect()"
+    >
+      <i class="material-icons">cancel</i>
+    </button>
+  </mat-dialog-actions>
+  <div class="modal">
+    <mat-dialog-content
+      >Tem certeza que deseja excluir o produto?</mat-dialog-content
+    >
+
+    <div *ngIf="products">
+      <ul>
+        <li>Nome: {{ products?.name }}</li>
+        <li>Preço: {{ products?.price | currency : "BRL" }}</li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <button mat-raised-button (click)="deleteProduct()" color="warn">
+        Excluir
+      </button>
+      <button mat-raised-button (click)="cancel()">Cancelar</button>
+    </div>
+  </div>
+</section>

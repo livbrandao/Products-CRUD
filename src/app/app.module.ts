@@ -30,10 +30,12 @@ import { ProductReadTableComponent } from './components/products/product-read-ta
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
+import { ModalDeleteComponent } from './components/modal-delete/modal-delete.component';
 
 registerLocaleData(localePt);
 
@@ -51,9 +53,9 @@ registerLocaleData(localePt);
     CardComponent,
     DetailCardComponent,
     ModalSucessComponent,
-
+    ModalDeleteComponent,
     ProductReadTableComponent,
-     ProductUpdateComponent,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,6 +74,7 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatSnackBarModule,
   ],
   providers: [
     {

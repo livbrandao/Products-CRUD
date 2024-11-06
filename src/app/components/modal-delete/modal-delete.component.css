@@ -1,0 +1,29 @@
+.custom-size {
+  width: 110px;
+  height: 110px;
+  font-size: 113px;
+  color: #247c6c;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 1rem;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
