@@ -1,27 +1,69 @@
-# Products
+# Products-CRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+Este é um projeto de CRUD de produtos desenvolvido em Angular, com uma interface de usuário construída utilizando Angular Material e dados mockados com JSON Server. O objetivo deste projeto é permitir que o usuário visualize, crie, edite e exclua produtos.
 
-## Development server
+## 📚 Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Listar produtos**: Visualização de todos os produtos registrados no sistema.
+- **Adicionar produto**: Possibilidade de adicionar novos produtos ao sistema.
+- **Editar produto**: Permite a edição dos detalhes de um produto existente.
+- **Excluir produto**: Opção para remover produtos do sistema.
 
-## Code scaffolding
+## 📑 Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular version 15.2.11**: Framework front-end para desenvolvimento da aplicação.
+- **Angular Material**: Biblioteca de componentes UI para Angular.
+- **JSON Server**: Ferramenta para mockar dados de API RESTful para desenvolvimento e testes.
 
-## Build
+## 📖 Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Certifique-se de ter o Node.js e o Angular CLI instalados em sua máquina.
 
-## Running unit tests
+- **Node.js**: [Instalar Node.js](https://nodejs.org/)
+- **Angular CLI**: Instale via npm:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  npm install -g @angular/cli
+```
 
-## Running end-to-end tests
+## 💻 Como rodar o projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone este repositório:
 
-## Further help
+```bash
+git clone https://github.com/livbrandao/Products-CRUD.git
+cd Products-CRUD
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Instale as dependências do projeto:
+
+```bash
+npm install
+```
+
+3. Inicie o JSON Server para mockar a API RESTful:
+
+```bash
+npx json-server --watch mocks/db.json
+```
+
+4. Em outra janela de terminal, inicie o servidor Angular:
+
+```bash
+npm start
+```
+
+5. Abra o navegador e acesse `http://localhost:4200` para ver a aplicação em funcionamento.
+
+```bash
+
+```
+
+## 🗂️ Estrutura de Pastas
+
+- src/app: Contém os componentes e serviços principais do CRUD de produtos.
+- mocks/db.json: Arquivo JSON usado pelo JSON Server para armazenar dados mockados.
+
+## 🧑‍💻 Autora
+
+Lívia Brandão
